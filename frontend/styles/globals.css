@@ -373,3 +373,30 @@
       display: none;
     }
   }
+  /* Layout.module.css */
+
+.layoutWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contentArea {
+  display: flex;
+  flex: 1;
+  background-color: var(--gray-100);
+}
+
+.mainContent {
+  flex: 1;
+  padding: var(--spacing-6);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ 

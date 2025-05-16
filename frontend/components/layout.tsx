@@ -23,14 +23,14 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'Financial Advisor' }
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="min-h-screen flex flex-col">
+      <div className="layout-wrapper">
         <Navbar toggleSidebar={toggleSidebar} />
         
-        <div className="flex flex-1">
+        <div className="content-area">
           <Sidebar isOpen={sidebarOpen} />
           
-          <main className="flex-1 p-6 bg-gray-100">
-            <div className="container mx-auto">
+          <main className="main-content">
+            <div className="container">
               {children}
             </div>
           </main>
